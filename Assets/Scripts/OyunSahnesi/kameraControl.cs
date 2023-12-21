@@ -186,9 +186,14 @@ public class kameraControl : MonoBehaviour
                     _yenilenme_noktasi = _temp3.transform.position.y;
                 }
             }
-            Debug.Log("FenerKonumListesi:    " + _fenerKonum);
+            foreach (var item in _fenerKonum)
+            {
+            }
+           
             if(_fenerKonum.Contains(i))
             {
+                Debug.Log("Fener oluşturulacaktır....");
+
                 GameObject _yeniFener = Instantiate(fener, fenerSpawnKonumu, Quaternion.identity);
                 
             }

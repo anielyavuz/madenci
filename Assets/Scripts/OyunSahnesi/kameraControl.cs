@@ -121,7 +121,11 @@ public class kameraControl : MonoBehaviour
                     
             
         }
-        Debug.Log("Fener konum... "+_fenerKonum.Count);
+        foreach (var item in _fenerKonum)
+        {
+            Debug.Log("Fener konum... " + item);
+        }
+        
         Random.Range(minimumy, maximumy);
 
         for (int i = 0; i < zeminSayisi; i++)
